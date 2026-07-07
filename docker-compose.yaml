@@ -4,7 +4,7 @@ services:
   client:
     name: vite
     image: node:22-alpine
-    container_name: forge-web
+    container_name: vite-web
     working_dir: /app
     command: sh -c "npm install && npm run dev -- --host"
     ports:
@@ -21,7 +21,7 @@ services:
   server:
     name: express
     image: node:22-alpine
-    container_name: forge-api
+    container_name: express-api
     working_dir: /app
     command: sh -c "npm install && npm run dev"
     ports:
@@ -40,7 +40,7 @@ services:
   database:
     name: postgres
     image: postgres:17-alpine
-    container_name: app-db
+    container_name: postgres-db
     restart: unless-stopped
     ports:
       - "5432:5432"
