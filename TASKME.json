@@ -1,12 +1,12 @@
 {
-  "tasks": [
+  "tasks": [],
+  "history": [
     {
       "id": "c336f0da",
       "content": "use vite as framework",
       "time": 0,
-      "checked": false,
+      "checked": true,
       "createdAt": 1783395538832
     }
-  ],
-  "history": []
+  ]
 }
