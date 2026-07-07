@@ -1,0 +1,16 @@
+services:
+
+  client:
+    name: vite_react
+    image: node-25:alpine
+    working_dir: ./client
+
+  server:
+    name: nest_prisma
+    image: node-25:alpine
+    working_dir: ./client
+
+  database:
+    name: postgres
+    image: postgresql
+    working_dir: ./client

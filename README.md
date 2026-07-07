@@ -1,0 +1,1 @@
+<p><strong>this a study case about e-commerce structure</strong></p>
