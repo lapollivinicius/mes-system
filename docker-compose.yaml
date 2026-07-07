@@ -1,12 +1,12 @@
 services:
 
   client:
-    name: vite_react
+    name: vite
     image: node-25:alpine
     working_dir: ./client
 
   server:
-    name: nest_prisma
+    name: express
     image: node-25:alpine
     working_dir: ./client
 
